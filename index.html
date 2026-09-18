@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -11,6 +10,7 @@
     <meta name="description"
         content="Uma carta de amor que virou uma experiência — Gabriel Vinicius ❤️ Ana Paula">
 
+    <!-- IMPORTANTE: sem / no início para funcionar localmente -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,7 +20,7 @@
          FUNDO / EFEITOS
     ====================================================== -->
 
-    <div id="background-effects">
+    <div id="background-effects" aria-hidden="true">
         <div class="stars"></div>
         <div class="particles"></div>
     </div>
@@ -60,7 +60,10 @@
                 Abra quando estiver pronta. ❤️
             </p>
 
-            <button id="open-envelope" class="main-button">
+            <button
+                type="button"
+                id="open-envelope"
+                class="main-button">
                 Abrir minha carta
             </button>
 
@@ -70,10 +73,15 @@
 
 
     <!-- =====================================================
-         INTRODUÇÃO
+         CONTEÚDO PRINCIPAL
     ====================================================== -->
 
     <main id="main-content" class="hidden">
+
+
+        <!-- =================================================
+             INTRODUÇÃO
+        ================================================== -->
 
         <section id="intro" class="story-section">
 
@@ -92,7 +100,10 @@
                     que começou muito antes de nós percebermos.
                 </p>
 
-                <button class="continue-button" data-next="history">
+                <button
+                    type="button"
+                    class="continue-button"
+                    data-next="history">
                     Começar nossa história ❤️
                 </button>
 
@@ -158,7 +169,9 @@
                                 pelas redes sociais...
                             </p>
 
-                            <div class="instagram-animation">
+                            <div
+                                class="instagram-animation"
+                                aria-hidden="true">
                                 <span></span>
                                 <span></span>
                             </div>
@@ -173,7 +186,10 @@
 
                 </div>
 
-                <button class="continue-button" data-next="recital">
+                <button
+                    type="button"
+                    class="continue-button"
+                    data-next="recital">
                     Continuar ↓
                 </button>
 
@@ -205,7 +221,10 @@
 
                 <div class="recital-reveal">
 
-                    <div class="church-light"></div>
+                    <div
+                        class="church-light"
+                        aria-hidden="true">
+                    </div>
 
                     <p>
                         Você estava prestes a vir para o recital
@@ -219,7 +238,10 @@
                     apaixonado por você.
                 </p>
 
-                <button class="continue-button" data-next="debora">
+                <button
+                    type="button"
+                    class="continue-button"
+                    data-next="debora">
                     Continuar ↓
                 </button>
 
@@ -232,7 +254,9 @@
              DÉBORA
         ================================================== -->
 
-        <section id="debora" class="story-section spiritual">
+        <section
+            id="debora"
+            class="story-section spiritual">
 
             <div class="story-content">
 
@@ -244,7 +268,10 @@
                     Eu vi você...
                 </h2>
 
-                <div class="spiritual-light"></div>
+                <div
+                    class="spiritual-light"
+                    aria-hidden="true">
+                </div>
 
                 <p>
                     Um dos momentos que guardo com carinho foi
@@ -257,7 +284,10 @@
                     você é.
                 </blockquote>
 
-                <button class="continue-button" data-next="maturity">
+                <button
+                    type="button"
+                    class="continue-button"
+                    data-next="maturity">
                     Continuar ↓
                 </button>
 
@@ -282,7 +312,9 @@
                     Existe tanta coisa que eu poderia dizer...
                 </h2>
 
-                <div id="word-cloud" class="word-cloud">
+                <div
+                    id="word-cloud"
+                    class="word-cloud">
 
                     <span>carinho</span>
                     <span>coragem</span>
@@ -290,7 +322,10 @@
                     <span>fé</span>
                     <span>força</span>
                     <span>amor</span>
-                    <span id="main-word">MATURIDADE</span>
+
+                    <span id="main-word">
+                        MATURIDADE
+                    </span>
 
                 </div>
 
@@ -299,7 +334,10 @@
                     é a sua maturidade.
                 </p>
 
-                <button class="continue-button" data-next="joy">
+                <button
+                    type="button"
+                    class="continue-button"
+                    data-next="joy">
                     Continuar ↓
                 </button>
 
@@ -312,7 +350,9 @@
              ALEGRIA
         ================================================== -->
 
-        <section id="joy" class="story-section joyful">
+        <section
+            id="joy"
+            class="story-section joyful">
 
             <div class="story-content">
 
@@ -327,7 +367,10 @@
 
                 <div class="joy-reveal">
 
-                    <div class="joy-particles"></div>
+                    <div
+                        class="joy-particles"
+                        aria-hidden="true">
+                    </div>
 
                     <span>
                         Você me dá uma
@@ -339,7 +382,10 @@
 
                 </div>
 
-                <button class="continue-button" data-next="first-kiss">
+                <button
+                    type="button"
+                    class="continue-button"
+                    data-next="first-kiss">
                     Continuar ↓
                 </button>
 
@@ -352,7 +398,9 @@
              PRIMEIRO BEIJO
         ================================================== -->
 
-        <section id="first-kiss" class="story-section">
+        <section
+            id="first-kiss"
+            class="story-section">
 
             <div class="story-content">
 
@@ -384,7 +432,9 @@
                     Uma data que agora faz parte da nossa história.
                 </p>
 
-                <div id="love-counter" class="love-counter">
+                <div
+                    id="love-counter"
+                    class="love-counter">
 
                     <div>
                         <strong id="counter-days">0</strong>
@@ -408,7 +458,10 @@
 
                 </div>
 
-                <button class="continue-button" data-next="music">
+                <button
+                    type="button"
+                    class="continue-button"
+                    data-next="music">
                     Continuar ↓
                 </button>
 
@@ -421,7 +474,9 @@
              NOSSA MÚSICA
         ================================================== -->
 
-        <section id="music" class="story-section music-section">
+        <section
+            id="music"
+            class="story-section music-section">
 
             <div class="story-content">
 
@@ -436,7 +491,9 @@
 
                 <div class="music-card">
 
-                    <div class="album-placeholder">
+                    <div
+                        class="album-placeholder"
+                        aria-hidden="true">
                         ♪
                     </div>
 
@@ -452,21 +509,32 @@
 
                     </div>
 
-                    <button id="music-play" class="play-button">
+                    <button
+                        type="button"
+                        id="music-play"
+                        class="play-button"
+                        aria-label="Tocar música">
                         ▶
                     </button>
 
                 </div>
 
-                <audio id="love-song" preload="none">
-                    <source src="assets/music/era-obvio.mp3" type="audio/mpeg">
+                <audio
+                    id="love-song"
+                    preload="none">
+                    <source
+                        src="assets/music/era-obvio.mp3"
+                        type="audio/mpeg">
                 </audio>
 
                 <small>
                     Toque para ouvir
                 </small>
 
-                <button class="continue-button" data-next="letter">
+                <button
+                    type="button"
+                    class="continue-button"
+                    data-next="letter">
                     Continuar ↓
                 </button>
 
@@ -479,7 +547,9 @@
              CARTA DE GABRIEL
         ================================================== -->
 
-        <section id="letter" class="story-section letter-section">
+        <section
+            id="letter"
+            class="story-section letter-section">
 
             <div class="paper-letter">
 
@@ -491,7 +561,9 @@
                     De mim para você.
                 </h2>
 
-                <div id="letter-text" class="letter-text">
+                <div
+                    id="letter-text"
+                    class="letter-text">
 
                     <p>
                         Ana Paula,
@@ -539,7 +611,10 @@
 
             </div>
 
-            <button class="continue-button" data-next="future">
+            <button
+                type="button"
+                class="continue-button"
+                data-next="future">
                 Continuar ↓
             </button>
 
@@ -550,7 +625,9 @@
              NOSSO FUTURO
         ================================================== -->
 
-        <section id="future" class="story-section">
+        <section
+            id="future"
+            class="story-section">
 
             <div class="story-content">
 
@@ -599,7 +676,10 @@
                     Quero ajudar você a realizar os seus também.
                 </p>
 
-                <button class="continue-button" data-next="gallery">
+                <button
+                    type="button"
+                    class="continue-button"
+                    data-next="gallery">
                     Continuar ↓
                 </button>
 
@@ -612,7 +692,9 @@
              GALERIA
         ================================================== -->
 
-        <section id="gallery" class="story-section">
+        <section
+            id="gallery"
+            class="story-section">
 
             <div class="story-content">
 
@@ -644,7 +726,10 @@
                         <div class="photo-placeholder">
                             Sua foto
                         </div>
-                        <p>Eu escolheria viver esse momento novamente.</p>
+                        <p>
+                            Eu escolheria viver esse momento
+                            novamente.
+                        </p>
                     </div>
 
                     <div class="photo-card">
@@ -698,7 +783,10 @@
 
                 </div>
 
-                <button class="continue-button" data-next="secret">
+                <button
+                    type="button"
+                    class="continue-button"
+                    data-next="secret">
                     Continuar ↓
                 </button>
 
@@ -711,7 +799,9 @@
              MENSAGENS SECRETAS
         ================================================== -->
 
-        <section id="secret" class="story-section secret-section">
+        <section
+            id="secret"
+            class="story-section secret-section">
 
             <div class="story-content">
 
@@ -729,21 +819,33 @@
 
                 <div class="secret-stars">
 
-                    <button class="secret-star" data-message="Você encontrou uma mensagem secreta. Eu ainda te amo mais do que consegui colocar nesse site.">
+                    <button
+                        type="button"
+                        class="secret-star"
+                        data-message="Você encontrou uma mensagem secreta. Eu ainda te amo mais do que consegui colocar nesse site.">
                         ✦
                     </button>
 
-                    <button class="secret-star" data-message="P.S.: Minha princesa, você é muito mais especial do que qualquer tela poderia explicar.">
+                    <button
+                        type="button"
+                        class="secret-star"
+                        data-message="P.S.: Minha princesa, você é muito mais especial do que qualquer tela poderia explicar.">
                         ✦
                     </button>
 
-                    <button class="secret-star" data-message="Explosiva... até quando não tenta, você consegue bagunçar meu coração. ❤️">
+                    <button
+                        type="button"
+                        class="secret-star"
+                        data-message="Explosiva... até quando não tenta, você consegue bagunçar meu coração. ❤️">
                         ✦
                     </button>
 
                 </div>
 
-                <button class="continue-button" data-next="final-surprise">
+                <button
+                    type="button"
+                    class="continue-button"
+                    data-next="final-surprise">
                     Acho que encontrei tudo ↓
                 </button>
 
@@ -756,7 +858,9 @@
              SURPRESA FINAL
         ================================================== -->
 
-        <section id="final-surprise" class="story-section final-section">
+        <section
+            id="final-surprise"
+            class="story-section final-section">
 
             <div class="final-content">
 
@@ -770,7 +874,10 @@
                     Mas ainda falta uma coisa...
                 </p>
 
-                <div class="final-light"></div>
+                <div
+                    class="final-light"
+                    aria-hidden="true">
+                </div>
 
                 <div class="final-letter">
 
@@ -805,6 +912,14 @@
 
                 </div>
 
+                <!-- Agora existe uma navegação explícita -->
+                <button
+                    type="button"
+                    class="continue-button final-continue"
+                    data-next="final-question">
+                    Ainda tem uma coisa... ↓
+                </button>
+
             </div>
 
         </section>
@@ -814,7 +929,9 @@
              INTERAÇÃO FINAL
         ================================================== -->
 
-        <section id="final-question" class="story-section question-section">
+        <section
+            id="final-question"
+            class="story-section question-section">
 
             <div class="story-content">
 
@@ -833,17 +950,25 @@
 
                 <div class="answer-buttons">
 
-                    <button id="yes-button" class="answer-button">
+                    <button
+                        type="button"
+                        id="yes-button"
+                        class="answer-button">
                         SIM ❤️
                     </button>
 
-                    <button id="sure-button" class="answer-button">
+                    <button
+                        type="button"
+                        id="sure-button"
+                        class="answer-button">
                         CLARO 🥹
                     </button>
 
                 </div>
 
-                <div id="final-answer" class="hidden">
+                <div
+                    id="final-answer"
+                    class="hidden">
 
                     <h2>
                         Então nossa história continua...
@@ -853,7 +978,10 @@
                         Capítulo seguinte: nós dois.
                     </p>
 
-                    <div class="heart-explosion"></div>
+                    <div
+                        class="heart-explosion"
+                        aria-hidden="true">
+                    </div>
 
                 </div>
 
@@ -868,15 +996,26 @@
          MODAL — MENSAGENS SECRETAS
     ====================================================== -->
 
-    <div id="secret-modal" class="modal hidden">
+    <div
+        id="secret-modal"
+        class="modal hidden"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="secret-message">
 
         <div class="modal-content">
 
-            <button id="close-modal" class="close-modal">
+            <button
+                type="button"
+                id="close-modal"
+                class="close-modal"
+                aria-label="Fechar mensagem">
                 ×
             </button>
 
-            <span class="modal-heart">
+            <span
+                class="modal-heart"
+                aria-hidden="true">
                 ❤️
             </span>
 
@@ -891,18 +1030,20 @@
          BOTÃO DISCRETO DE MEMÓRIAS
     ====================================================== -->
 
-    <button id="memory-menu" class="memory-menu hidden">
+    <button
+        type="button"
+        id="memory-menu"
+        class="memory-menu hidden">
         ♡ Memórias
     </button>
 
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
 
     <script src="script.js"></script>
 
 </body>
 
 </html>
-```
-
-Esse é o **primeiro arquivo**. Ele já deixa toda a história organizada em capítulos e prepara os elementos que o CSS e o JS vão controlar. A galeria, por exemplo, já possui espaço para **10 fotos reais**, sem inventar fotos de pessoas.
-
-**Próximo: `style.css`** — nele vou transformar essa estrutura em um site realmente cinematográfico, com o envelope 3D, fundo lilás, partículas, estrelas, cartas, timeline, polaroids e versão mobile.

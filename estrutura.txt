@@ -1,0 +1,17 @@
+site-amor/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── assets/
+│   ├── images/
+│   │   ├── foto-01.jpg
+│   │   ├── foto-02.jpg
+│   │   └── ...
+│   │
+│   ├── music/
+│   │   └── era-obvio.mp3
+│   │
+│   └── icons/
+│       └── ...
